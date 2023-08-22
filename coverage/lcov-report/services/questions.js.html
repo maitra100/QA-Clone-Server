@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">26.08% </span>
+                <span class="strong">95.65% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/23</span>
+                <span class='fraction'>22/23</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">26.08% </span>
+                <span class="strong">95.65% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/23</span>
+                <span class='fraction'>22/23</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -100,78 +100,78 @@
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const BoardTable=require('../database/BoardTable');
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">const BoardTable=require('../database/BoardTable');
 const QuestionTable=require('../database/Questions');
 &nbsp;
-const getQuestions=<span class="fstat-no" title="function not covered" >as</span>ync(id)=&gt;{
-    let board=<span class="cstat-no" title="statement not covered" >await BoardTable.findById(id);</span>
-    let promises=<span class="cstat-no" title="statement not covered" >[];</span>
-<span class="cstat-no" title="statement not covered" >    board.questions.map(<span class="fstat-no" title="function not covered" >(q</span>ues)=&gt;{</span>
-        let promise=<span class="cstat-no" title="statement not covered" >QuestionTable.findById(ques);</span>
-<span class="cstat-no" title="statement not covered" >        promises.push(promise);</span>
+const getQuestions=async(id)=&gt;{
+    let board=await BoardTable.findById(id);
+    let promises=[];
+    board.questions.map((ques)=&gt;{
+        let promise=QuestionTable.findById(ques);
+        promises.push(promise);
     })
-<span class="cstat-no" title="statement not covered" >    try{</span>
-        let questions=<span class="cstat-no" title="statement not covered" >await Promise.all(promises);</span>
-<span class="cstat-no" title="statement not covered" >        questions.sort(<span class="fstat-no" title="function not covered" >(a</span>,b)=&gt;{</span>
-<span class="cstat-no" title="statement not covered" >            return b.likes-a.likes;</span>
+    try{
+        let questions=await Promise.all(promises);
+        questions.sort((a,b)=&gt;{
+            return b.likes-a.likes;
         })
-<span class="cstat-no" title="statement not covered" >        return questions;</span>
+        return questions;
     }
     catch(e){
 <span class="cstat-no" title="statement not covered" >        throw new Error(e.message);</span>
     }
 }
 &nbsp;
-const postQuestionService=<span class="fstat-no" title="function not covered" >as</span>ync(details)=&gt;{
-    let question=<span class="cstat-no" title="statement not covered" >new QuestionTable({</span>
+const postQuestionService=async(details)=&gt;{
+    let question=new QuestionTable({
         text:details.text,
         likes:0
     });
-<span class="cstat-no" title="statement not covered" >    question=await question.save();</span>
-    let board=<span class="cstat-no" title="statement not covered" >await BoardTable.findByIdAndUpdate(details.id,{$push:{questions:question.id}});</span>
-<span class="cstat-no" title="statement not covered" >    return question;</span>
+    question=await question.save();
+    let board=await BoardTable.findByIdAndUpdate(details.id,{$push:{questions:question.id}});
+    return question;
 }
 &nbsp;
-const changeLikesService=<span class="fstat-no" title="function not covered" >as</span>ync(id)=&gt;{
-    let question=<span class="cstat-no" title="statement not covered" >await QuestionTable.findByIdAndUpdate(id,{$inc:{likes:1}});</span>
-<span class="cstat-no" title="statement not covered" >    return question;</span>
+const changeLikesService=async(id)=&gt;{
+    let question=await QuestionTable.findByIdAndUpdate(id,{$inc:{likes:1}});
+    return question;
 }
 &nbsp;
 module.exports={getQuestions,postQuestionService,changeLikesService};</pre></td></tr></table></pre>
@@ -181,7 +181,7 @@ module.exports={getQuestions,postQuestionService,changeLikesService};</pre></td>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-08-22T16:27:00.406Z
+                at 2023-08-22T18:11:23.438Z
             </div>
         <script src="../prettify.js"></script>
         <script>
