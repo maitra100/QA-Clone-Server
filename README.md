@@ -14,3 +14,6 @@ Run the frontend repo at 3001.
 
 ## Architecture
 ![architecture](./public/architecture.PNG)
+
+## Caution
+Don't reload the page once connected else the socket id for a connection for a user changes and then authorization stuff would break (used socket id for authorization instead of name to maintain full anonymity).
